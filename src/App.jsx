@@ -6,6 +6,8 @@ import Sidebar from './components/layout/Sidebar';
 import LandingPage from './pages/LandingPage';
 import Module1 from './pages/modules/Module1';
 import Module2 from './pages/modules/Module2';
+import Module3 from './pages/modules/Module3';
+import ModuleFoundations from './pages/modules/ModuleFoundations';
 import ModulePlaceholder from './pages/modules/ModulePlaceholder';
 
 import './index.css';
@@ -28,6 +30,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/modules/classical-encryption" element={<Module1 />} />
             <Route path="/modules/block-ciphers" element={<Module2 />} />
+            <Route path="/modules/foundations" element={<ModuleFoundations />} />
+            <Route path="/modules/public-key" element={<Module3 />} />
             <Route path="/modules/:id" element={<ModulePlaceholder />} />
           </Routes>
         </div>

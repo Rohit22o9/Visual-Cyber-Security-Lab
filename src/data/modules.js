@@ -1,5 +1,13 @@
 export const modulesData = [
   {
+    id: 'foundations',
+    title: 'Module 0: Foundations',
+    simulations: [
+      { id: 'osi', title: 'OSI Architecture', path: '/modules/foundations#osi' },
+      { id: 'attacks', title: 'Security Attacks', path: '/modules/foundations#attacks' },
+    ]
+  },
+  {
     id: 'classical-encryption',
     title: 'Module 1: Classical Encryption',
     simulations: [
@@ -24,8 +32,10 @@ export const modulesData = [
     id: 'public-key',
     title: 'Module 3: Public Key Crypto',
     simulations: [
-      { id: 'rsa', title: 'RSA Simulation', path: '/modules/public-key#rsa' },
-      { id: 'dh', title: 'Diffie-Hellman', path: '/modules/public-key#dh' },
+      { id: 'rsa', title: 'RSA Encryption', path: '/modules/public-key#rsa' },
+      { id: 'diffie-hellman', title: 'Diffie-Hellman', path: '/modules/public-key#diffie-hellman' },
+      { id: 'elgamal', title: 'ElGamal Cipher', path: '/modules/public-key#elgamal' },
+      { id: 'ecc', title: 'Elliptic Curve (ECC)', path: '/modules/public-key#ecc' },
     ]
   },
   // Placeholders for the rest
